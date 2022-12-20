@@ -118,8 +118,7 @@ if __name__ == "__main__":
         sections = browser.find_elements(By.CLASS_NAME, "section-title-link")
         for i, j in enumerate(sections):
             # get into each section
-            action.move_to_element(j).perform()
-            j.click()
+            browser.find_elements(By.CLASS_NAME, "section-title-link")[i].click()
             time.sleep(5)
             # multiple choice
             multiple_choice(browser, action)
@@ -132,5 +131,5 @@ if __name__ == "__main__":
             print("finished section " + str(i) + "'s video problem")
             # back to the week page
             browser.back()
-            print("finished section " + str(i) + "'s. Progress: " + str(i+1) + "/" + str(len(sections)))
+            print("finished section " + str(i) + ". Progress: " + str(i+1) + "/" + str(len(sections)))
             time.sleep(5)
