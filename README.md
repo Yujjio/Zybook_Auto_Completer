@@ -1,5 +1,5 @@
 # Zybook_Auto_Completer
- A python script that can automatically participation part on the ZyBook platform. 
+ A python script that can automatically finish participation part on the ZyBook platform. 
  
 ## Package
 In order to run this script, you need to download selenium, which is a third package to control web browsers through programs and performing browser automation. 
